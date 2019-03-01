@@ -10,4 +10,4 @@ En esta página voy a mostrar cosas estupendas que podemos realizar con Programa
 - [Página de GitHub](https://github.com/nataly26)
 
 ## Problemas
-Maximizar$$\(z=x_1+x_2\) sujeto a \(x_1\geq 0\)$$
+Maximizar$$ z=x_1+x_2 $$ sujeto a $$ x_1\geq 0 $$
