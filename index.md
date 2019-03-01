@@ -13,3 +13,5 @@ En esta página voy a mostrar cosas estupendas que podemos realizar con Programa
 Maximizar $$ z=x_1+x_2 $$ sujeto a
 
 $$ x_1\geq 0 $$
+
+![Ejemplo de una región factible](region_factible_2.jpg)
