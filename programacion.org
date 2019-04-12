@@ -1,0 +1,67 @@
+#+title: Programación Lineal  
+#+author: Nat Padua 
+
+#+options: H:2
+
+#+latex_header: \usepackage{listings}
+
+* Teória 
+** Motivación
+
+[[file:imagendeprogramacionl.jpg]]
+
+El objetivo de la programación lineal es encontrar funciones lineales
+sobre dominios convexos, es decir, definidas sobre regiones dadas por
+desigualdades.
+
+** Ejemplos 
+El problema de la dieta. 
+Optimización de los lugares para una excursión.
+Escoger objetos optimos para un campamento. 
+El problema del flujo.
+
+** Convexidad 
+Un conjunto \(X\) es convexo si para todo x,y\( /in k/ \) y \(/in
+[0,1]/\) se tiene que \(tx+(1-t)y /in X/\)
+** Método Simplex 
+
+
+* Herramientas computacionales 
+** Emacs...
+*** Org mode
+| C-c C-c | evaluar bloque de código |
+|         |                          |
+
+** Git
+** Phyton 
+*** El lenguaje de python
+    En el lenguaje de python podemos hacer operaciones:
+    #+begin_src python :session
+    2+2
+    #+end_src
+
+    #+RESULTS:
+
+    #+begin_src python :session :results value
+2+2
+    #+end_src
+
+    #+RESULTS:
+    : 4
+También podemos usar la bibliopteca pulp. Por ejemplo, encontramos el máximo de \(-4x+y\) sujeto a \(x+y\leq \frac{1}{2}\) 
+#+begin_src python :session
+from pulp import *
+x = LpVariable("x", 0, 3)
+y = LpVariable("y", 0, 1)
+prob = LpProblem("myProblem", LpMinimize)
+prob += x + y <= 2
+prob += -4*x + y
+status = prob.solve()
+value(x), value(y), value(prob.objective)
+#+end_src
+
+#+RESULTS:
+| 2.0 | 0.0 | -8.0 |
+
+*** Jupyter
+** LaTeX
