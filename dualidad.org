@@ -28,3 +28,5 @@
 - Siguiente problema...
 - 
 * TEOREMAS 
+ Demostraremos que el mínimo del problema dual es igual al máximo del
+ problema primitivo.
